@@ -1,11 +1,10 @@
 from sklearn.ensemble import GradientBoostingClassifier
-import xgboost as xgb
-import os
+
 import pickle
 
 vectorizer = pickle.load(open('vectorizer.pkl', 'rb'))
-model_path = os.path.join(os.path.dirname(__file__), 'xgb.pkl')
-xgb = pickle.load(open(model_path, 'rb'))
+
+xgb = pickle.load(open('xgb.pkl', 'rb'))
 # tokenizer_path = r'C:\Users\Haya\Desktop\Python\Grad_Project\tokenizer_distilbert\tokenizer_distil'
 # model_path =r'C:\Users\Haya\Desktop\Python\Grad_Project\distilbert_model\distilbert_model'
 #
