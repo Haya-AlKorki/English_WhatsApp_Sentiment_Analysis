@@ -1,6 +1,5 @@
 from sklearn.ensemble import GradientBoostingClassifier
 import pickle
-import xgboost
 
 vectorizer = pickle.load(open('vectorizer.pkl', 'rb'))
 
