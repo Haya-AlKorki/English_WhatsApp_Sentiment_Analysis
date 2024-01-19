@@ -1,9 +1,13 @@
 from sklearn.ensemble import GradientBoostingClassifier
 import joblib
 import pickle
-
+import xgboost as xgb
+xgb_model = xgb.Booster()
+xgb = xgb_model.load_model('xgb.pkl')
 vectorizer = pickle.load(open('vectorizer.pkl', 'rb'))
-xgb = joblib.load(open('xgb.pkl', 'rb'))
+
+# vectorizer = pickle.load(open('vectorizer.pkl', 'rb'))
+# xgb = joblib.load(open('xgb.pkl', 'rb'))
 # xgb = pickle.load(open('xgb.pkl', 'rb'))
 # tokenizer_path = r'C:\Users\Haya\Desktop\Python\Grad_Project\tokenizer_distilbert\tokenizer_distil'
 # model_path =r'C:\Users\Haya\Desktop\Python\Grad_Project\distilbert_model\distilbert_model'
