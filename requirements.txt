@@ -9,4 +9,5 @@ nltk==3.8.1
 wordcloud==1.9.3
 transformers==4.36.2
 pillow==10.2.0
-xgboost==2.0.3
+xgboost==1.0.2
+numba==0.48.0
